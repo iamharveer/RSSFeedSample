@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.harve.rssfeedsample.MainActivity">
+
+    <TextView
+        android:text="Image of the day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImageHeader"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="@string/DateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/DateTime"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/nasa"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/DateTime"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImageDescription"
+        android:textSize="6mm"
+        android:text="@string/ImageDescription"/>
+</LinearLayout>
+</ScrollView>
